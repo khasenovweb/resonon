@@ -101,11 +101,37 @@
   padding: 0;
   font-family: "IBM Plex Sans", sans-serif;
   text-decoration: none;
+  outline: none;
+}
+body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  min-height: 100vh;
 }
 .container {
   max-width: 1330px;
   padding: 0 30px;
   margin: 0 auto;
+}
+button {
+  cursor: pointer;
+}
+.btn {
+  font-weight: normal;
+  font-size: 14px;
+  color: white;
+  border: none;
+  background-color: #a60000;
+  border-radius: 3px;
+  padding: 10px 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #8d0000;
 }
 .header {
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
@@ -148,23 +174,6 @@
 }
 .header__nav a:hover {
   color: #a60000;
-}
-button {
-  cursor: pointer;
-}
-.btn {
-  font-weight: normal;
-  font-size: 14px;
-  color: white;
-  border: none;
-  background-color: #a60000;
-  border-radius: 3px;
-  padding: 10px 25px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.btn:hover {
-  background-color: #8d0000;
 }
 .header__phoneblock {
   display: -webkit-box;
@@ -214,4 +223,85 @@ button {
 .header__bottom .header__nav a {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.footer {
+  background-color: #1d1d1d;
+  margin-top: auto;
+  padding: 36px 0;
+}
+.footer * {
+  color: white;
+}
+.footer__logo__desc {
+  font-weight: normal;
+  font-size: 12px;
+  color: white;
+  margin-top: 15px;
+}
+.footer__top .container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.footer__title {
+  font-weight: bold;
+  font-size: 15px;
+}
+.footer__nav {
+  max-width: 180px;
+}
+.footer__nav__links {
+  list-style-type: none;
+  margin-top: 20px;
+}
+.footer__nav__links li {
+  margin-bottom: 15px;
+}
+.footer__nav__links a {
+  font-weight: 300;
+  font-size: 13px;
+}
+.footer__nav__links a:hover {
+  color: #a60000;
+}
+.footer__contacts {
+  max-width: 180px;
+}
+.footer__contacts__label {
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 11px;
+}
+.footer__contacts__text {
+  font-weight: 300;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.footer__contacts__content {
+  margin-top: 20px;
+}
+.footer__socials__items {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-left: -7px;
+  margin-top: 20px;
+}
+.footer__socials__items a {
+  margin: 0 7px;
+}
+.footer__socials__btn {
+  margin-top: 20px;
+}
+.footer__bottom {
+  margin-top: 50px;
+}
+.footer__bottom__politics {
+  color: #595959;
+  font-weight: 500;
+  font-size: 12px;
 }
