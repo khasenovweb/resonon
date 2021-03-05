@@ -46,7 +46,7 @@ function watch() {
 
 gulp.watch("app/js/*.js").on("change", browserSync.reload);
 gulp.watch("app/img/**/*", browserSync.reload);
-gulp.watch("app/less/*.less", less__compile);
+gulp.watch("app/less/**/*.less", less__compile);
 gulp.watch("app/nunjucks/**/*.html", nunjucks_compile);
 gulp.watch("app/*.html").on("change", browserSync.reload);
 

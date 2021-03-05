@@ -1,0 +1,28 @@
+.block-4__content {
+    display: flex;
+    align-items: flex-start;
+}
+.block-4__text {
+    p {
+        margin-top: 20px;
+    }
+}
+.block-4__img {
+    max-width: 522px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .block-4__content {
+        flex-direction: column;
+    }
+    .block-4__img {
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .block-4__text {
+        p {
+            margin-top: 10px;
+        }
+    }
+}

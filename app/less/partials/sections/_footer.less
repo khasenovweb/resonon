@@ -1,3 +1,4 @@
+@import "../_vars.less";
 .footer {
   background-color: #1d1d1d;
   margin-top: auto;
@@ -79,4 +80,39 @@
   color: #595959;
   font-weight: 500;
   font-size: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer__top .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__logo__desc {
+    text-align: center;
+  }
+  .footer__nav {
+    margin-top: 20px;
+    * {
+      text-align: center;
+    }
+  }
+  .footer__contacts {
+    margin-top: 20px;
+    * {
+      text-align: center;
+    }
+  }
+  .footer__socials {
+    margin-top: 20px;
+    * {
+      text-align: center;
+    }
+  }
+  .footer__socials__items {
+    justify-content: center;
+  }
+  .footer__bottom__politics {
+    display: block;
+    text-align: center;
+  }
 }
