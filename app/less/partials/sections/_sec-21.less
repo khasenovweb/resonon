@@ -1,0 +1,42 @@
+.sec-21 {
+    .content-wp-editor {
+        margin-top: 24px;
+    }
+}
+.sec-21__btns {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    .btn {
+        margin-right: 17px;
+        margin-bottom: 10px;
+    }
+}
+.sec-21__content {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-gap: 60px;
+}
+.sec-21__img {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sec-21__content {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .sec-21__img {
+        order: 0;
+    }
+    .sec-21__text {
+        order: 1;
+    }
+    .sec-21 .content-wp-editor {
+        margin-top: 20px;
+    }
+}

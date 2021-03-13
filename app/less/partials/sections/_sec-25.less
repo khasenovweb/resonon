@@ -1,0 +1,28 @@
+.sec-25__content {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-gap: 20px;
+    margin-top: 18px;
+}
+.sec-25__content__text {
+    .links {
+        margin-top: 24px;
+    }
+}
+.sec-25__content__img {
+    img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sec-25__content {
+        grid-template-columns: 1fr;
+    }
+    .sec-25__content__img  {
+        order: 0;
+    }
+    .sec-25__content__text {
+        order: 1;
+    }
+}

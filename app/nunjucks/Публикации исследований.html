@@ -1,0 +1,54 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+
+<!-- ============================ hero ============================== -->
+<section class="hero" style="background-image: url(img/pika-l.jpg);">
+    <div class="container">
+        <div class="breadcrumbs">
+            <!-- Breadcrumb NavXT 6.6.0 -->
+            <span property="itemListElement" typeof="ListItem">
+                <a property="item" typeof="WebPage" title="Перейти к Альтиус." href="https://altius-rf.ru" class="home">
+                    <span property="name">Главная</span>
+                </a>
+                <meta property="position" content="1">
+            </span>
+            <span> » </span>
+            <span property="itemListElement" typeof="ListItem">
+                <a property="item" typeof="WebPage" title="Перейти к Объекты." href="https://altius-rf.ru/objects" class="post post-objects-archive">
+                    <span property="name">Объекты</span>
+                </a>
+                <meta property="position" content="2">
+            </span>
+            <span> » </span>
+            <span property="itemListElement" typeof="ListItem">
+                <span property="name" class="post post-objects current-item">Pika L</span>
+                <meta property="url" content="https://altius-rf.ru/objects/kapitalnyj-remont-kazanskoj-tjec-1">
+                <meta property="position" content="3">
+            </span>
+        </div>
+        <h1 class="hero__title">Публикации исследований</h1>
+    </div>
+</section>
+<!-- ============================END hero ============================== -->
+<!-- ============================ sec-29 ============================== -->
+<section class="sec-29 sec white">
+    <div class="container">
+        <h2 class="sec-title">Публикации</h2>
+        <div class="content-wp-editor">
+            <p>Ниже приведены научные статьи, описывающие исследования с использованием гиперспектральных систем "Резонон".</p>
+        </div>
+        <div class="sec-29__links">
+            <a href="" class="link">Гиперспектральная визуализация: общие сведения</a>
+            <a href="" class="link">Гиперспектральное дистанционное зондирование с воздуха</a>
+            <a href="" class="link">Сельское хозяйство и пищевые технологии</a>
+            <a href="" class="link">Биотехнологии</a>
+            <a href="" class="link">Мониторинг окружающей среды</a>
+        </div>
+    </div>
+</section>
+<!-- ============================END sec-29 ============================== -->
+
+{% endblock %}

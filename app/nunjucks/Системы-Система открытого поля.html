@@ -1,0 +1,127 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+
+<!-- ============================ hero ============================== -->
+<section class="hero" style="background-image: url(img/pika-l.jpg);">
+    <div class="container">
+        <div class="breadcrumbs">
+            <!-- Breadcrumb NavXT 6.6.0 -->
+            <span property="itemListElement" typeof="ListItem">
+                <a property="item" typeof="WebPage" title="Перейти к Альтиус." href="https://altius-rf.ru" class="home">
+                    <span property="name">Главная</span>
+                </a>
+                <meta property="position" content="1">
+            </span>
+            <span> » </span>
+            <span property="itemListElement" typeof="ListItem">
+                <a property="item" typeof="WebPage" title="Перейти к Объекты." href="https://altius-rf.ru/objects" class="post post-objects-archive">
+                    <span property="name">Объекты</span>
+                </a>
+                <meta property="position" content="2">
+            </span>
+            <span> » </span>
+            <span property="itemListElement" typeof="ListItem">
+                <span property="name" class="post post-objects current-item">Pika L</span>
+                <meta property="url" content="https://altius-rf.ru/objects/kapitalnyj-remont-kazanskoj-tjec-1">
+                <meta property="position" content="3">
+            </span>
+        </div>
+        <h1 class="hero__title">Система открытого поля</h1>
+        <p class="hero__desc">Портативная система гиперспектральной визуализации</p>
+        <div class="hero__btns">
+            <button class="btn ">Пример данных</button>
+            <button class="btn white">Обучающие видео</button>
+        </div>
+    </div>
+</section>
+<!-- ============================END hero ============================== -->
+<!-- ============================ sec-16 ============================== -->
+<section class="sec-16 sec">
+    <div class="container">
+        <h1 class="sec-title">Бортовая система дистанционного зондирования</h1>
+        <p class="sec-16-desc">Портативная система гиперспектральной визуализации</p>
+        <div class="sec-16__content">
+            <div class="sec-16__content__left">
+                <div class="videoblock" style="background-image: url(img/sec-16-video.jpg);">
+                    <img src="img/play.svg" class="videoblock__play" alt="">
+                </div>
+                <div class="sec-16__content__img" style="background-image: url(img/sec-16-img.png);"></div>
+            </div>
+            <div class="sec-16__content__text content-wp-editor">
+                <p>Наша наружная система используется для получения гиперспектральных данных в тех областях, где мобильность является критически важной. Гиперспектральная камера Resonon с нажимными щетками устанавливается на поворотный столик на специально модифицированном штативе. Во время сбора данных сцена вращает гиперспектральную камеру, просматривая интересующую сцену. Тепловизор и столик управляются с помощью   программного обеспечения Spectronon.</p>
+                <p>Необработанные гиперспектральные данные преобразуются в яркость и отражательную способность с использованием данных радиометрической калибровки и калибровочного стандарта, помещенного в сцену. Эталон калибровки представляет собой специальный брезент  с известной (в основном плоской) отражательной способностью. Эти операции можно выполнить с помощью программного обеспечения Spectronon.</p>
+                <p>Системы Resonon - это готовые к немедленному использованию решения под ключ, включая все оборудование и программное обеспечение, необходимое для сбора и анализа гиперспектральных данных.</p>
+                <p>Наружные системы могут быть оснащены любой гиперспектральной камерой Resonon,  охватывающей спектральный диапазон 350–1700 нм. </p>
+                <h5>Системные компоненты:</h5>
+                <ul>
+                    <li>Гиперспектральная камера</li>
+                    <li>Объектив</li>
+                    <li>Блок управления системой - для сбора данных на борту</li>
+                    <li>600 ГБ встроенного хранилища данных</li>
+                    <li>GPS / IMU - для записи положения и ориентации датчика</li>
+                    <li>Программное обеспечение для георекламы - для корректировки информации GPS / IMU</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================END sec-16 ============================== -->
+<!-- ============================ sec-17 ============================== -->
+<section class="sec-17 sec gray">
+    <div class="container">
+        <div class="sec-17__content">
+            <div class="sec-17__content__text">
+                <h2 class="sec-title">Фотографии Outdoor Field System</h2>
+                <div class="sec-17__content__text__desc">Портативная система гиперспектральной визуализации</div>
+            </div>
+            <div class="sec-17__content__items">
+                <div class="sec-17__content__item" style="background-image: url(img/sec-17-item.jpg);"></div>
+                <div class="sec-17__content__item" style="background-image: url(img/sec-17-item.jpg);"></div>
+                <div class="sec-17__content__item" style="background-image: url(img/sec-17-item.jpg);"></div>
+                <div class="sec-17__content__item" style="background-image: url(img/sec-17-item.jpg);"></div>
+                <div class="sec-17__content__item" style="background-image: url(img/sec-17-item.jpg);"></div>
+                <div class="sec-17__content__item" style="background-image: url(img/sec-17-item.jpg);"></div>
+                <div class="sec-17__content__item" style="background-image: url(img/sec-17-item.jpg);"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================END sec-17 ============================== -->
+<!-- ============================ sec-11 ============================== -->
+<section class="sec-11 sec">
+    <div class="container">
+        <h1 class="sec-title">Характеристики</h1>
+        <table>
+            <tr>
+                <td>Камера</td>
+                <td>Стандартный GPS / IMU (кг / фунт)</td>
+                <td>Высокоточный GPS / IMU (двойная антенна) (кг / фунты)</td>
+            </tr>
+            <tr>
+                <td>Pika L</td>
+                <td>1.55 / 3.41</td>
+                <td>1.69 / 3.71</td>
+            </tr>
+            <tr>
+                <td>Pika XC2</td>
+                <td>1.55 / 3.41</td>
+                <td>1.69 / 3.71</td>
+            </tr>
+            <tr>
+                <td>Pika L</td>
+                <td>1.55 / 3.41</td>
+                <td>1.69 / 3.71</td>
+            </tr>
+            <tr>
+                <td>Pika L</td>
+                <td>1.55 / 3.41</td>
+                <td>1.69 / 3.71</td>
+            </tr>
+        </table>
+    </div>
+</section>
+<!-- ============================END sec-11 ============================== -->
+{% endblock %}

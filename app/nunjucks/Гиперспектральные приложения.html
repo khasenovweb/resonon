@@ -1,0 +1,101 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+
+<!-- ============================ hero ============================== -->
+<section class="hero" style="background-image: url(img/pika-l.jpg);">
+    <div class="container">
+        <div class="breadcrumbs">
+            <!-- Breadcrumb NavXT 6.6.0 -->
+            <span property="itemListElement" typeof="ListItem">
+                <a property="item" typeof="WebPage" title="Перейти к Альтиус." href="https://altius-rf.ru" class="home">
+                    <span property="name">Главная</span>
+                </a>
+                <meta property="position" content="1">
+            </span>
+            <span> » </span>
+            <span property="itemListElement" typeof="ListItem">
+                <a property="item" typeof="WebPage" title="Перейти к Объекты." href="https://altius-rf.ru/objects" class="post post-objects-archive">
+                    <span property="name">Объекты</span>
+                </a>
+                <meta property="position" content="2">
+            </span>
+            <span> » </span>
+            <span property="itemListElement" typeof="ListItem">
+                <span property="name" class="post post-objects current-item">Pika L</span>
+                <meta property="url" content="https://altius-rf.ru/objects/kapitalnyj-remont-kazanskoj-tjec-1">
+                <meta property="position" content="3">
+            </span>
+        </div>
+        <h1 class="hero__title">Гиперспектральные приложения</h1>
+    </div>
+</section>
+<!-- ============================END hero ============================== -->
+<!-- ============================ sec-23 ============================== -->
+<div class="sec-23 sec gray">
+    <div class="container">
+        <h2 class="sec-title">Приложения</h2>
+        <div class="content-wp-editor">
+            <p>Гиперспектральные системы Resonon позволяют точно и последовательно различать похожие цвета или материалы. Наши системы используются во всем мире на платформах, от самолетов до микроскопов. Как показывают следующие примеры, наши решения решают широкий спектр проблем.</p>
+        </div>
+    </div>
+</div>
+<!-- ============================END sec-23 ============================== -->
+<!-- ============================ sec-24 ============================== -->
+<div class="sec-24 sec">
+    <div class="container">
+        <h2 class="sec-title">Точное земледелие</h2>
+        <div class="content-wp-editor">
+            <p>Программное обеспечение воздушного дистанционного зондирования Resonon управляет бортовой системой во время полета и предоставляет инструменты постобработки для коррекции яркости и георектификации.</p>
+        </div>
+        <div class="sec-24__items">
+            <div class="sec-24__item">
+                <div class="sec-24__item__img__wrapper">
+                    <div class="sec-24__item__img" style="background-image: url(img/sec-24-item.png);"></div>
+                </div>
+                <div class="sec-24__item__text">
+                    <div class="sec-24__item__titlebefore">Пример применения</div>
+                    <div class="sec-24__item__title">Картирование инвазивных сорняков</div>
+                    <div class="content-wp-editor">
+                        <p>Для выявления и обнаружения инвазивного заражения сорняками использовалась система воздушной гиперспектральной визуализации Resonon.</p>
+                        <p>Опубликовано в:  <strong>SC Jay et al., Симпозиум по геонаукам и дистанционному зондированию (IGARSS) (2010) .</strong></p>
+                    </div>
+                    <div class="doc">
+                        <div class="doc__icon"></div>
+                        <a href="" class="doc__title">Скачать полное исследование</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-24__item">
+                <div class="sec-24__item__img__wrapper">
+                    <div class="sec-24__item__img" style="background-image: url(img/sec-24-item-2.png);"></div>
+                </div>
+                <div class="sec-24__item__text">
+                    <div class="sec-24__item__titlebefore">Пример применения</div>
+                    <div class="sec-24__item__title">Картирование инвазивных сорняков</div>
+                    <div class="content-wp-editor">
+                        <p>Для выявления и обнаружения инвазивного заражения сорняками использовалась система воздушной гиперспектральной визуализации Resonon.</p>
+                        <p>Опубликовано в:  <strong>SC Jay et al., Симпозиум по геонаукам и дистанционному зондированию (IGARSS) (2010) .</strong></p>
+                    </div>
+                    <a href="" class="btn-link">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================END sec-24 ============================== -->
+<!-- ============================ sec-5 ============================== -->
+<section class="sec-5 sec">
+    <div class="container">
+        <div class="sec-5__content">
+            <h2 class="sec-title">Свяжитесь с нами</h2>
+            <div class="sec-5__desc">Щелкните ниже для получения дополнительной информации.</div>
+            <button class="btn">Свяжитесь с нами</button>
+        </div>
+        <div class="sec-5__alert">Системы высокоточной гиперспектральной съемки для исследовательских и промышленных приложений.</div>
+    </div>
+</section>
+<!-- ============================END sec-5 ============================== -->
+{% endblock %}
