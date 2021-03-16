@@ -1,0 +1,62 @@
+.modal__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    display: none;
+    opacity: 0;
+    transition: 0.3s;
+    &.active {
+        opacity: 1;
+        .modal {
+            transform: translateY(0);
+        }
+    }
+}
+.modal {
+    background-color: #F6F7F9;
+    border-radius: 10px;
+    padding: 20px 30px;
+    max-width: 420px;
+    margin-top: 100px;
+    transform: translateY(-30px);
+    transition: 0.3s;
+}
+.modal__content__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.modal__content__desc {
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+.modal__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
+    justify-items: start;
+    grid-gap: 10px;
+    margin-top: 17px;
+    .checkbox {
+        margin: 10px 0;
+    }
+}
+.modal__form__input {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+    .modal {
+        max-width: 90%;
+    }
+}

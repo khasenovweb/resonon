@@ -36,12 +36,12 @@
                     <li><a href="/">О нас</a></li>
                     <li><a href="/">Связаться с нами</a></li>
                 </ul>
-                <button class="btn header__top__callorder">Заказать звонок</button>
+                <button class="btn header__top__callorder" data-modal-show="1">Заказать звонок</button>
                 <div class="header__phoneblock">
                     <a href="tel:8 800 555 55 55" class="header__phone">8 800 555 55 55</a>
                     <div class="header__phone__desc">Звонок по России бесплатно</div>
                 </div>
-                <div class="header__hamburger">
+                <div class="header__hamburger" data-hamburger="showhide">
                     <img src="img/hamburger.svg" alt="">
                 </div>
             </div>
@@ -354,7 +354,7 @@
                             <img src="img/yt.svg" alt="">
                         </a>
                     </div>
-                    <button class="btn footer__socials__btn">Заказать звонок</button>
+                    <button class="btn footer__socials__btn" data-modal-show="1">Заказать звонок</button>
                 </div>
             </div>
         </div>
@@ -365,6 +365,57 @@
         </div>
     </section>
     <!--==========================END footer ==========================-->
+    <!--========================== mobile__nav ==========================-->
+    <section class="mobile__nav" data-mobile-nav>
+        <div class="mobile__nav__content">
+            <ul class="mobile__nav__links">
+                <li class="has-children"> Гиперспектральные камеры <ul class="mobile__nav__submenu">
+                        <li><a href="">Pika L</a></li>
+                        <li><a href="">Pika XC2</a></li>
+                        <li><a href="">Pika NIR-320</a></li>
+                        <li><a href="">PPika NIR-640</a></li>
+                        <li><a href="">Pika NUV</a></li>
+                    </ul>
+                </li>
+                <li class="has-children"><a href="/">Системы</a></li>
+                <li><a href="/">Машинное зрение</a></li>
+                <li><a href="/">Гиперспектральное программное обеспечение</a></li>
+                <li class="has-children"><a href="/">Области применения</a></li>
+                <li class="has-children"><a href="/">База знаний</a></li>
+                <li><a href="/">О нас</a></li>
+                <li><a href="/">Связаться с нами</a></li>
+            </ul>
+        </div>
+    </section>
+    <!--==========================END mobile__nav ==========================-->
+    <!--========================== modal ==========================-->
+    <section class="modal__wrapper" data-modal="1">
+        <div class="modal">
+            <div class="modal__content">
+                <div class="modal__content__title">Заказать обратный звонок</div>
+                <div class="modal__content__desc">Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время</div>
+                <form action="/" class="modal__form">
+                    <div class="modal__form__input">
+                        <input type="text" placeholder="Введите Ваше имя">
+                    </div>
+                    <div class="modal__form__input">
+                        <input type="text" placeholder="Введите Ваш телефон">
+                    </div>
+                    <div class="checkbox">
+                        <label for="checkbox">
+                            <input id="checkbox" type="checkbox" checked>
+                            <div class="box">
+                                <div class="box__circle"></div>
+                            </div>
+                        </label>
+                        <div class="checkbox__text">Отправляя заявку вы соглашаетесь с <a href="">политикой конфинденциальности</a></div>
+                    </div>
+                    <button class="btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--==========================END modal ==========================-->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>

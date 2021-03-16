@@ -1,0 +1,95 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+
+<!-- ============================ hero ============================== -->
+<section class="hero" style="background-image: url(img/pika-l.jpg);">
+    <div class="container">
+        <div class="breadcrumbs">
+            <!-- Breadcrumb NavXT 6.6.0 -->
+            <span property="itemListElement" typeof="ListItem">
+                <a property="item" typeof="WebPage" title="Перейти к Альтиус." href="https://altius-rf.ru" class="home">
+                    <span property="name">Главная</span>
+                </a>
+                <meta property="position" content="1">
+            </span>
+            <span> » </span>
+            <span property="itemListElement" typeof="ListItem">
+                <a property="item" typeof="WebPage" title="Перейти к Объекты." href="https://altius-rf.ru/objects" class="post post-objects-archive">
+                    <span property="name">Объекты</span>
+                </a>
+                <meta property="position" content="2">
+            </span>
+            <span> » </span>
+            <span property="itemListElement" typeof="ListItem">
+                <span property="name" class="post post-objects current-item">Pika L</span>
+                <meta property="url" content="https://altius-rf.ru/objects/kapitalnyj-remont-kazanskoj-tjec-1">
+                <meta property="position" content="3">
+            </span>
+        </div>
+        <h1 class="hero__title">О нас</h1>
+    </div>
+</section>
+<!-- ============================END hero ============================== -->
+<!-- ============================ sec-31 ============================== -->
+<section class="sec-31 sec white">
+    <div class="container">
+        <div class="sec-31__content">
+            <div class="sec-31__content__text">
+                <div class="content-wp-editor">
+                    <p>Основанный в 2002 году, Resonon расположен в Бозмане, штат Монтана, в самом сердце Скалистых гор. </p>
+                    <p>Мы предоставляем полные системы гиперспектральной визуализации, а также индивидуальные аппаратные и программные решения. Наши камеры для получения гиперспектральных изображений компактны, экономичны и обеспечивают отличные характеристики.</p>
+                    <p>Resonon поставляет системы по всему миру через нашу   сеть дистрибьюторов .</p>
+                </div>
+            </div>
+            <div class="sec-31__content__img">
+                <img src="img/sec-31.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================END sec-31 ============================== -->
+<!-- ============================ sec-32 ============================== -->
+<section class="sec-32 sec white">
+    <div class="container">
+        <div class="sec-32__content">
+            <div class="sec-32__title">Последние достижения</div>
+            <div class="content-wp-editor">
+                <p>Мы благодарны за поддержку следующим учреждениям:</p>
+            </div>
+            <div class="sec-32__items">
+                <div class="sec-32__item">
+                    <div class="sec-32__item__img" style="background-image: url(img/sec-32-item-1.jpg);"></div>
+                    <div class="sec-32__item__title">Resonon объединяется с миссией НАСА ARCSTONE</div>
+                    <div class="sec-32__item__desc">Resonon работает с ARCSTONE Mission для количественной оценки лунного отражения.</div>
+                </div>
+                <div class="sec-32__item">
+                    <div class="sec-32__item__img" style="background-image: url(img/sec-32-item-1.jpg);"></div>
+                    <div class="sec-32__item__title">Премия Экспортного совета округа Монтана "Экспортер года"</div>
+                    <div class="sec-32__item__desc">Resonon работает с ARCSTONE Mission для количественной оценки лунного отражения.</div>
+                </div>
+                <div class="sec-32__item">
+                    <div class="sec-32__item__img" style="background-image: url(img/sec-32-item-1.jpg);"></div>
+                    <div class="sec-32__item__title">Гиперспектральная визуализация - обучение роботов видеть</div>
+                    <div class="sec-32__item__desc">Опубликовано в Tech Briefs в марте 2018 г</div>
+                </div>
+                <div class="sec-32__item">
+                    <div class="sec-32__item__img" style="background-image: url(img/sec-32-item-1.jpg);"></div>
+                    <div class="sec-32__item__title">Премия Ассоциации малого бизнеса Монтаны Экспортер года в области малого бизнеса</div>
+                    <div class="sec-32__item__desc">Resonon работает с ARCSTONE Mission для количественной оценки лунного отражения.</div>
+                </div>
+                <div class="sec-32__item">
+                    <div class="sec-32__item__img" style="background-image: url(img/sec-32-item-1.jpg);"></div>
+                    <div class="sec-32__item__title">Resonon проводит встречу с дистрибьюторами в Сан-Франциско</div>
+                    <div class="sec-32__item__desc">Resonon провел двухдневную встречу для наших международных дистрибьюторов в Сан-Франциско в феврале 2020 года. Это был большой успех!</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================END sec-32 ============================== -->
+
+{% endblock %}

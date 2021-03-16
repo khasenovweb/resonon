@@ -9,7 +9,9 @@
   list-style-type: none;
   box-sizing: border-box;
 }
-
+.hidden {
+  overflow: hidden;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -39,6 +41,60 @@ p {
   }
 }
 // =======================================END p =======================================//
+// ======================================= input =======================================//
+input {
+  padding: 10px 13px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: none;
+  font-weight: normal;
+  font-size: 14px;
+  width: 100%;
+}
+// =======================================END input =======================================//
+// ======================================= checkbox =======================================//
+.box {
+  width: 18px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #e6e6e6;
+  padding: 1px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.box__circle {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 100%;
+  transition: 0.2s;
+}
+.checkbox__text {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: 8px;
+  a {
+      font-size: 12px;
+      text-decoration: underline;
+      color: rgba(0, 0, 0, 0.3);
+  }
+}
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  input {
+      display: none;
+      &:checked + .box {
+          background-color: #4EBD7A;
+          .box__circle {
+              transform: translateX(8px);
+          }
+      }
+  }
+  
+}
+// =======================================END checkbox =======================================//
+
 // =======================================container=======================================//
 .container {
   max-width: 1330px;
@@ -76,13 +132,17 @@ p {
   background-color: @red;
   border-radius: 3px;
   padding: 10px 25px;
-  transition: 0.3s;
+  // transition: 0.3s;
   &:hover {
-    background-color: darken(@red, 5%);
+    background-color: #7B0101;
   }
   &.gray {
     background-color: #EBEBEB;
     color: @red;
+    &:hover {
+      background-color: #7B0101;
+      color: white;
+    }
   }
   &.white {
     background-color: #fff;
@@ -93,6 +153,9 @@ p {
   margin-bottom: 20px;
   font-size: 13px;
   opacity: 0.5;
+  * {
+    color: white;
+  }
   
 }
 @media screen and (max-width: 500px) {
@@ -132,6 +195,9 @@ p {
     background-size: contain;
     background-position: center;
     background-image: url(../img/link.svg);
+  }
+  &:hover {
+    color: #A60000;
   }
 }
 @media screen and (max-width: 500px) {
@@ -370,6 +436,9 @@ table {
 .doc {
   display: flex;
   align-items: flex-start;
+  &:hover {
+    color: #A60000;
+  }
 }
 .doc__icon {
   width: 14px;
@@ -432,6 +501,14 @@ table {
 @import "partials/sections/_sec-27.less";
 @import "partials/sections/_sec-28.less";
 @import "partials/sections/_sec-29.less";
+@import "partials/sections/_sec-30.less";
+@import "partials/sections/_sec-31.less";
+@import "partials/sections/_sec-32.less";
+@import "partials/sections/_sec-33.less";
+@import "partials/sections/_map.less";
+@import "partials/sections/_404.less";
+@import "partials/sections/_mobile__nav.less";
+@import "partials/sections/_modal.less";
 @import "partials/blocks/_block-1.less";
 @import "partials/blocks/_block-2.less";
 @import "partials/blocks/_block-3.less";

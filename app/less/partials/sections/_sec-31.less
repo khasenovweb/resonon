@@ -1,0 +1,23 @@
+.sec-31__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.sec-31__content__img {
+    img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sec-31__content {
+        grid-template-columns: 1fr;
+        grid-gap: 16px;
+    }
+    .sec-31__content__img {
+        order: 0;
+    }
+    .sec-31__content__text {
+        order: 1;
+    }
+}

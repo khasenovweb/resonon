@@ -1,0 +1,43 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+
+
+<!-- ============================ 404 ============================== -->
+<section class="s404 sec">
+    <div class="container">
+        <div class="s404__content">
+            <div class="breadcrumbs">
+                <!-- Breadcrumb NavXT 6.6.0 -->
+                <span property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" title="Перейти к Альтиус." href="https://altius-rf.ru" class="home">
+                        <span property="name">Главная</span>
+                    </a>
+                    <meta property="position" content="1">
+                </span>
+                <span> » </span>
+                <span property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" title="Перейти к Объекты." href="https://altius-rf.ru/objects" class="post post-objects-archive">
+                        <span property="name">Объекты</span>
+                    </a>
+                    <meta property="position" content="2">
+                </span>
+                <span> » </span>
+                <span property="itemListElement" typeof="ListItem">
+                    <span property="name" class="post post-objects current-item">Pika L</span>
+                    <meta property="url" content="https://altius-rf.ru/objects/kapitalnyj-remont-kazanskoj-tjec-1">
+                    <meta property="position" content="3">
+                </span>
+            </div>
+            <h2 class="sec-title">Ошибка 404</h2>
+            <div class="s404__desc">Страница не найдена, вернуться обратно</div>
+            <a href="/" class="btn">Вернуться на главную</a>
+        </div>
+    </div>
+</section>
+<!-- ============================END 404 ============================== -->
+
+
+{% endblock %}

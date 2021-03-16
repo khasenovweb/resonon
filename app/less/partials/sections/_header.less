@@ -2,6 +2,9 @@
 .header {
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 .header__top {
   padding: 14px 0;
@@ -65,6 +68,7 @@
 }
 .has-children {
   position: relative;
+  cursor: pointer;
   &:before {
     content: "";
     display: block;
@@ -80,6 +84,7 @@
     background-size: contain;
     transition: 0.3s;
   }
+  
 }
 .header__top {
   .header__nav a {
@@ -90,6 +95,9 @@
     top: 35px;
     a {
       padding: 5px 20px;
+      &::before {
+        display: none;
+      }
     }
   }
 }

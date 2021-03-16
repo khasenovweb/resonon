@@ -36,12 +36,12 @@
                     <li><a href="/">О нас</a></li>
                     <li><a href="/">Связаться с нами</a></li>
                 </ul>
-                <button class="btn header__top__callorder">Заказать звонок</button>
+                <button class="btn header__top__callorder" data-modal-show="1">Заказать звонок</button>
                 <div class="header__phoneblock">
                     <a href="tel:8 800 555 55 55" class="header__phone">8 800 555 55 55</a>
                     <div class="header__phone__desc">Звонок по России бесплатно</div>
                 </div>
-                <div class="header__hamburger">
+                <div class="header__hamburger" data-hamburger="showhide">
                     <img src="img/hamburger.svg" alt="">
                 </div>
             </div>
@@ -115,6 +115,48 @@
         </div>
     </section>
     <!-- ============================END sec-29 ============================== -->
+    <!-- ============================ sec-30 ============================== -->
+    <section class="sec-30 sec white">
+        <div class="container">
+            <div class="sec-30__title">Инстуциональные партнеры</div>
+            <div class="sec-30__desc">Мы благодарны за поддержку следующим учреждениям:</div>
+            <div class="sec-30__items">
+                <div class="sec-30__item">
+                    <div class="sec-30__item__img" style="background-image: url(img/sec-30-item-1.png);"></div>
+                    <div class="sec-30__item__title">NASA</div>
+                </div>
+                <div class="sec-30__item">
+                    <div class="sec-30__item__img" style="background-image: url(img/sec-30-item-2.png);"></div>
+                    <div class="sec-30__item__title">National Institutes of Health</div>
+                </div>
+                <div class="sec-30__item">
+                    <div class="sec-30__item__img" style="background-image: url(img/sec-30-item-1.png);"></div>
+                    <div class="sec-30__item__title">National Institute of Standards and Technology</div>
+                </div>
+                <div class="sec-30__item">
+                    <div class="sec-30__item__img" style="background-image: url(img/sec-30-item-1.png);"></div>
+                    <div class="sec-30__item__title">National Oceanic and Atmospheric Administration</div>
+                </div>
+                <div class="sec-30__item">
+                    <div class="sec-30__item__img" style="background-image: url(img/sec-30-item-1.png);"></div>
+                    <div class="sec-30__item__title">National Science Foundation</div>
+                </div>
+                <div class="sec-30__item">
+                    <div class="sec-30__item__img" style="background-image: url(img/sec-30-item-1.png);"></div>
+                    <div class="sec-30__item__title">United States Air Force</div>
+                </div>
+                <div class="sec-30__item">
+                    <div class="sec-30__item__img" style="background-image: url(img/sec-30-item-1.png);"></div>
+                    <div class="sec-30__item__title">United States Department of Agriculture</div>
+                </div>
+                <div class="sec-30__item">
+                    <div class="sec-30__item__img" style="background-image: url(img/sec-30-item-1.png);"></div>
+                    <div class="sec-30__item__title">United States Department of Energy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================END sec-30 ============================== -->
     <!--========================== footer ==========================-->
     <section class="footer">
         <div class="footer__top">
@@ -171,7 +213,7 @@
                             <img src="img/yt.svg" alt="">
                         </a>
                     </div>
-                    <button class="btn footer__socials__btn">Заказать звонок</button>
+                    <button class="btn footer__socials__btn" data-modal-show="1">Заказать звонок</button>
                 </div>
             </div>
         </div>
@@ -182,6 +224,57 @@
         </div>
     </section>
     <!--==========================END footer ==========================-->
+    <!--========================== mobile__nav ==========================-->
+    <section class="mobile__nav" data-mobile-nav>
+        <div class="mobile__nav__content">
+            <ul class="mobile__nav__links">
+                <li class="has-children"> Гиперспектральные камеры <ul class="mobile__nav__submenu">
+                        <li><a href="">Pika L</a></li>
+                        <li><a href="">Pika XC2</a></li>
+                        <li><a href="">Pika NIR-320</a></li>
+                        <li><a href="">PPika NIR-640</a></li>
+                        <li><a href="">Pika NUV</a></li>
+                    </ul>
+                </li>
+                <li class="has-children"><a href="/">Системы</a></li>
+                <li><a href="/">Машинное зрение</a></li>
+                <li><a href="/">Гиперспектральное программное обеспечение</a></li>
+                <li class="has-children"><a href="/">Области применения</a></li>
+                <li class="has-children"><a href="/">База знаний</a></li>
+                <li><a href="/">О нас</a></li>
+                <li><a href="/">Связаться с нами</a></li>
+            </ul>
+        </div>
+    </section>
+    <!--==========================END mobile__nav ==========================-->
+    <!--========================== modal ==========================-->
+    <section class="modal__wrapper" data-modal="1">
+        <div class="modal">
+            <div class="modal__content">
+                <div class="modal__content__title">Заказать обратный звонок</div>
+                <div class="modal__content__desc">Оставьте заявку и наш менеджер свяжется с Вами в ближайшее время</div>
+                <form action="/" class="modal__form">
+                    <div class="modal__form__input">
+                        <input type="text" placeholder="Введите Ваше имя">
+                    </div>
+                    <div class="modal__form__input">
+                        <input type="text" placeholder="Введите Ваш телефон">
+                    </div>
+                    <div class="checkbox">
+                        <label for="checkbox">
+                            <input id="checkbox" type="checkbox" checked>
+                            <div class="box">
+                                <div class="box__circle"></div>
+                            </div>
+                        </label>
+                        <div class="checkbox__text">Отправляя заявку вы соглашаетесь с <a href="">политикой конфинденциальности</a></div>
+                    </div>
+                    <button class="btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--==========================END modal ==========================-->
     <script src="js/jquery.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
