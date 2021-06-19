@@ -6,14 +6,16 @@ $(document).ready(function(){
         navText: ["<img src=\"/img/slider-arrow-1.svg\">","<img src=\"/img/slider-arrow-2.svg\" >"],
     });
 
-    //Навигация посередине изображения в слайдере
-    $('.mobile__nav__submenu').slideUp();
-    $('.has-children').click(function(){
-        if ($(event.target).closest(".mobile__nav__submenu").length) return;
-        $(this).find('.mobile__nav__submenu').slideToggle(300);
+    //Мобильное меню
+    $('.mobile__nav__links .menu-item-has-children a').eq(0).attr('href', '#');
+    
+    $('.mobile__nav__links .sub-menu').slideUp();
+    $('.mobile__nav__links .menu-item-has-children').click(function(){
+        if ($(event.target).closest(".mobile__nav__links .sub-menu").length) return;
+        $(this).find('.sub-menu').slideToggle(300);
         $(this).toggleClass('active');
     });
-    //END Навигация посередине изображения в слайдере
+    //END Мобильное меню
 
     $('[data-hamburger="showhide"]').click(function(){
         if( $('[data-mobile-nav]').hasClass('active') ) {
